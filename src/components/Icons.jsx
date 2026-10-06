@@ -1,4 +1,4 @@
-// Small stroke icons (Feather style). Usage: <MailIcon className="size-5" />
+
 
 const Icon = ({ children, className = 'size-5', ...rest }) => (
   <svg

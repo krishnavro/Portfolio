@@ -4,7 +4,7 @@ import { ChevronDownIcon, ExternalLinkIcon, GitHubIcon } from './Icons'
 import OtherProjects from './OtherProjects'
 import Section from './Section'
 
-// One project = one bar. Click the bar to open the details.
+
 const ProjectItem = ({ project }) => {
   const [open, setOpen] = useState(false)
   const panelId = `project-${project.id}`

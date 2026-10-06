@@ -1,5 +1,4 @@
-// Shared wrapper so every section has the same spacing and heading style.
-// tone="soft" gives the section a light grey background (used to alternate).
+
 
 const Section = ({ id, title, tone = 'white', children }) => (
   <section

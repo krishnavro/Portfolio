@@ -1,7 +1,3 @@
-// ─────────────────────────────────────────────────────────────
-//  All the text on the portfolio lives here.
-//  Edit this file to change content — no need to touch components.
-// ─────────────────────────────────────────────────────────────
 
 export const profile = {
   name: 'Shrikrishna Kumbhar',
@@ -12,12 +8,12 @@ export const profile = {
   phone: '+91 93251 67530',
   phoneLink: 'tel:+919325167530',
   github: 'https://github.com/krishnavro',
-  // TODO: replace with your real LinkedIn profile URL
+
   linkedin: 'https://www.linkedin.com/in/shrikrishna-kumbhar-1a07a8269/',
   resume: 'Shrikrishna-Kumbhar-Resume.pdf',
 }
 
-// Small timeline shown at the top of the page (left → right)
+
 export const timeline = [
   { label: '10th', years: '2018' },
   { label: '12th', years: '2021' },
@@ -42,8 +38,7 @@ export const skills = [
   { category: 'Tools & Platforms', items: ['Git', 'GitHub', 'Vercel', 'Render'] },
 ]
 
-// ── Projects ────────────────────────────────────────────────
-// `live` and `github` are optional. Leave them out (or '') and the link is hidden.
+
 
 export const mernProjects = [
   {
@@ -92,8 +87,7 @@ export const frontendProjects = [
   }
 ]
 
-// Shown in the "View Other Projects" popup — just the name and technology.
-// To add a project, copy one line and change it.
+
 export const otherProjects = [
   { name: 'Youtube Clone', tech: ['HTML', 'CSS'] , github: 'https://github.com/krishnavro/HTML-CSS-Youtube-Clone'},
 ]
@@ -130,6 +124,6 @@ export const certifications = [
   {
     title: 'Cloud Computing',
     issuer: 'NPTEL',
-    link: '', // optional: paste the certificate URL to show a "View certificate" link
+    link: '', 
   },
 ]

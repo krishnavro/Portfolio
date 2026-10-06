@@ -2,9 +2,7 @@ import { useState } from 'react'
 import { profile } from '../data'
 import Section from './Section'
 
-// NOTE: this form is not connected to anything yet (by design).
-// To make it work later, send the form data inside handleSubmit
-// (for example to your own Express + MongoDB API, or a form service).
+
 
 const inputClass =
   'mt-1.5 w-full rounded-md border border-ink/25 bg-white px-3 py-2.5 focus:border-ink'
@@ -14,8 +12,7 @@ const Feedback = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // TODO: send { name, email, message } to your backend here
-    //setNote(`Feedback isn’t live yet. For now, please email me at ${profile.email}.`)
+    
   }
 
   return (

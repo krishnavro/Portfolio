@@ -2,8 +2,7 @@ import { useEffect, useRef } from 'react'
 import { otherProjects } from '../data'
 import { CloseIcon, GitHubIcon } from './Icons'
 
-// The pop-up that lists the smaller projects (name + technology only).
-// Uses the browser's built-in <dialog>: Esc closes it, and focus stays inside while it's open.
+
 const OtherProjects = ({ open, onClose }) => {
   const dialogRef = useRef(null)
 
@@ -13,7 +12,7 @@ const OtherProjects = ({ open, onClose }) => {
     if (!open && dialog.open) dialog.close()
   }, [open])
 
-  // stop the page behind from scrolling while the pop-up is open
+  
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
     return () => {
@@ -27,7 +26,6 @@ const OtherProjects = ({ open, onClose }) => {
       aria-labelledby="other-projects-title"
       onClose={onClose}
       onClick={(e) => {
-        // a click on the dark backdrop lands on the <dialog> itself
         if (e.target === dialogRef.current) onClose()
       }}
       className="m-auto w-[min(32rem,calc(100%-2rem))] rounded-xl bg-white p-0 text-ink shadow-xl backdrop:bg-ink/60"

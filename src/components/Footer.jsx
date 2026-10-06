@@ -8,13 +8,13 @@ const Footer = () => {
           © {new Date().getFullYear()} {profile.name}
         </p>
 
-        {/* Visitor count placeholder: connect it to a real counter later */}
+        {/* 
         <p className="flex items-center gap-2">
           Visitors
           <span className="min-w-12 rounded border border-slate-600 px-2 py-0.5 text-center tabular-nums">
             –
           </span>
-        </p>
+        </p> */}
       </div>
     </footer>
   )

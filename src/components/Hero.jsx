@@ -6,10 +6,10 @@ const Hero = () => {
   return (
     <section id="top" className="border-b border-line bg-soft">
       <div className="mx-auto max-w-5xl px-6">
-        {/* Education timeline */}
+        
         <div className="border-b border-line py-8">
           <div className="relative">
-            {/* the line runs from the first dot to the last dot */}
+            
             <span
               aria-hidden="true"
               className="absolute left-[12.5%] right-[12.5%] top-[9px] h-0.5 bg-ink"
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Name, intro and photo */}
+       
         <div className="grid items-center gap-12 py-12 md:grid-cols-[1fr_auto] md:py-16">
           <div>
             <h1 className="font-serif text-5xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
@@ -84,7 +84,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Photo on the right of the name */}
+          
           <div className="relative mx-auto w-56 sm:w-64 md:mr-3 md:w-72">
             <div
               aria-hidden="true"

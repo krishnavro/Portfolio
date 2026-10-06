@@ -19,7 +19,7 @@ const Nav = () => {
           SK
         </a>
 
-        {/* Desktop links */}
+       
         <nav aria-label="Main" className="hidden sm:block">
           <ul className="m-0 flex list-none gap-7 p-0 text-[15px]">
             {links.map((l) => (
@@ -32,7 +32,7 @@ const Nav = () => {
           </ul>
         </nav>
 
-        {/* Mobile menu button */}
+       
         <button
           type="button"
           className="-mr-2 rounded-md p-2 sm:hidden"

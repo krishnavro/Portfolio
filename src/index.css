@@ -36,7 +36,7 @@
   }
 }
 
-/* Pop-up fade-in (only plays when the user opens it) */
+
 dialog[open] {
   animation: pop-in 160ms ease-out;
 }
