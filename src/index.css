@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, ui-serif, serif;
+
+  --color-ink: #0f172a;
+  --color-line: #e2e8f0;
+  --color-muted: #475569;
+  --color-amber: #f59e0b;
+  --color-amber-deep: #b45309;
+  --color-soft: #f8fafc;
+  --color-gray: #7FBC8D;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-amber-deep);
+    outline-offset: 2px;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    outline-offset: 0;
+  }
+}
+
+/* Pop-up fade-in (only plays when the user opens it) */
+dialog[open] {
+  animation: pop-in 160ms ease-out;
+}
+dialog[open]::backdrop {
+  animation: fade-in 160ms ease-out;
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  dialog[open],
+  dialog[open]::backdrop { animation: none; }
+}
