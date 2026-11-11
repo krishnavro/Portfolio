@@ -32,6 +32,7 @@ export const about = [
 
 export const skills = [
   { category: 'Languages', items: ['C', 'C++', 'Java', 'Python', 'JavaScript'] },
+  {category: 'Core Concepts', items: ['OOPS','DSA','RESTful APIs','Authentication','Authorization']},
   { category: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS', 'React.js'] },
   { category: 'Backend', items: ['Node.js', 'Express.js'] },
   { category: 'Database', items: ['MongoDB', 'MySQL'] },
@@ -47,6 +48,7 @@ export const mernProjects = [
     subtitle: 'Bus reservation and management system',
     points: [
       'Full-stack app for bus scheduling, seat booking and reservation management.',
+      'Implemented Filtering and Sorting features in Search Section',
       'Secure login with hashed passwords and JWT sessions stored in HTTP-only cookies.',
       'Role-based access with separate dashboards for travellers, operators and admins.',
       'Frontend deployed on Vercel and backend on Render, so it runs live.',
