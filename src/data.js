@@ -56,6 +56,20 @@ export const mernProjects = [
     tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Vercel', 'Render'],
     live: 'https://bus-go-pro.vercel.app/',
     github: '', 
+  },
+  {
+    id: 'leadManager',
+    name: 'Lead Manager',
+    subtitle: 'Leader Management System',
+    points: [
+  'Full-stack Lead Management System built using MongoDB, Express.js, React.js and Node.js.',
+  'Implemented CRUD operations, user authentication, protected routes, and lead status-based filtering and search.',
+  'Designed RESTful APIs and integrated the React frontend using Axios.',
+  'Frontend deployed on Vercel and backend on Render for live accessibility.',
+  ],
+    tech: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Vercel', 'Render'],
+    live: 'https://lead-manager-green-ten.vercel.app/',
+    github: '', 
   }
 ]
 
